@@ -20,12 +20,12 @@
 
 	<!-- Header -->
 	<header id="header">
-		<a href="index.html" class="title">EMR System</a>
+		<a href="${rootPath}/" class="title">전자의무기록</a>
 		<nav>
 			<ul>
 				<li><a href="${rootPath}/">Home</a></li>
-				<li><a href="${rootPath}/emrs" class="active">EMR SYSTEM</a></li>
-				<li><a href="${rootPath}/api">Service</a></li>
+				<li><a href="${rootPath}/emrs" class="active">EMR</a></li>
+				<li><a href="${rootPath}/logout">Logout</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -48,10 +48,10 @@
 						<th>성별 : ${PATI.sex}</th>
 					</tr>
 					<tr>
-						<th>질병코드 : ${PATI.dcode}</th>
+						<th>질병코드 : ${PATI.code}</th>
 					</tr>
 					<tr>
-						<th>기록지 : ${PATI.dis}</th>
+						<th>기록지 : ${PATI.disease}</th>
 					</tr>
 					<tr>
 						<th>특이사항 : ${PATI.karte}</th>

@@ -33,7 +33,6 @@ public class ApiController {
 		urlBuilder.append("&" + URLEncoder.encode("pageNo", "UTF-8") + "=" + URLEncoder.encode(pageNo, "UTF-8"));
 		urlBuilder.append("&" + URLEncoder.encode("numOfRow", "UTF-8") + "=" + URLEncoder.encode(numOfRow, "UTF-8"));
 		urlBuilder.append("&" + URLEncoder.encode("korNm", "UTF-8") + "=" + URLEncoder.encode(korNm, "UTF-8"));
-		urlBuilder.append("&type=json");
 
 
 		log.debug(" {} ",urlBuilder);
@@ -62,7 +61,7 @@ public class ApiController {
 		System.out.println(result);
 		model.addAttribute("APIS", result);
 
-		return result;
+		return "home";
 	}
 
 }
