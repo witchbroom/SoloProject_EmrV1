@@ -54,7 +54,7 @@ input[type="text"]{
 			<ul>
 				<li><a href="${rootPath}/">Home</a></li>
 				<li><a href="${rootPath}/emrs" class="active">EMR</a></li>
-				<li><a href="${rootPath}/logout">Logout</a></li>
+				<li><a href="${rootPath}/logout" class="logout">Logout</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -196,8 +196,14 @@ input[type="text"]{
 			</ul>
 		</div>
 	</footer>
-
+	<form:form id="logout-form" action="${rootPath}/logout" method="POST"/>	
 	<!-- Scripts -->
+	<!-- 로그아웃 폼 제출 -->
+	<script>
+	document.querySelector("a.logout")?.addEventListener('click',()=>{
+		document.querySelector("form#logout-form")?.submit()
+	});
+	</script>
 	<script src="${rootPath}/static/js/auto.js?001"></script>
 	<script src="${rootPath}/static/js/chart.js?ver=005"></script>
 	<script src="${rootPath}/static/js/jquery.min.js"></script>

@@ -80,8 +80,14 @@
 			</ul>
 		</div>
 	</footer>
+	<form:form id="logout-form" action="${rootPath}/logout" method="POST"/>	
 
 	<!-- Scripts -->
+	<script>
+	document.querySelector("li.logout")?.addEventListener('click',()=>{
+		document.querySelector("form#logout-form")?.submit()
+	});
+	</script>
 	<script src="${rootPath}/static/js/detail.js?001"></script>
 	<script src="${rootPath}/static/js/jquery.min.js"></script>
 	<script src="${rootPath}/static/js/jquery.scrollex.min.js"></script>
