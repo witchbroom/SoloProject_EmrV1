@@ -48,7 +48,7 @@ public class HomeController {
 	     
 	    final String host = "smtp.naver.com";
 	    final String accountId = "witchbloom";
-	    final String accountPwd = "fnfnfn112";
+	    final String accountPwd = "{NAVER.PASSWORD}";
 	    final int port = 465;
 	     
 	    String receiver = "witchbloom@naver.com";
