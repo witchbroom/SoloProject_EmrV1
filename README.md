@@ -10,6 +10,10 @@
 
 - Spring Framework : 5.2.22 RELEASE
 - Spring Security : 5.3.13 RELEASE
+- Java 11
+- Tomcat 9.0
+- HTML5, CSS3
+- Javascript
 - MySQL Workbench 8.0
 - MyBatis 3.5.x
 
