@@ -106,7 +106,7 @@ form#logout-form{
 				<div class="content">
 					<div class="inner">
 						<h2>환자관리 시스템 V1</h2>
-						<p>CRUD 구현</p>
+						<p>전자의무기록부</p>
 						<ul class="actions">
 							<li><a href="${rootPath}/emrs" class="button">들어가기</a></li>
 						</ul>
